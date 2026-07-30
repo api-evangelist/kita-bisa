@@ -1,0 +1,64 @@
+# Kitabisa
+
+> Kitabisa is Indonesia's largest donation-based crowdfunding and mutual-aid
+> platform, founded in 2013 and headquartered in Jakarta. It lets individuals,
+> nonprofits, and corporations raise and give funds transparently for medical
+> causes, disaster relief, education, and community development, and it operates
+> a dedicated Islamic-philanthropy surface for zakat, wakaf, and qurban. The
+> group has grown beyond crowdfunding into digital fundraising services for
+> NGOs, a CSR and social-marketing practice for corporate partners, a
+> cooperative, and the SalingJaga mutual-protection/insurance product.
+
+## Important note for agents
+
+Kitabisa publishes **no public API and no developer program**. There is no
+developer portal, no API reference, and no OpenAPI/AsyncAPI/GraphQL definition
+on any Kitabisa surface. `docs.kitabisa.com` and `developer.kitabisa.com` do not
+resolve in DNS, and a code search across all 75 public repositories in the
+`kitabisa` GitHub organization returns zero OpenAPI or Swagger documents.
+Corporate and NGO integrations are arranged through business partnership
+channels, not self-serve API keys. Do not synthesize Kitabisa API endpoints —
+none are published.
+
+## Platform
+
+- [Kitabisa](https://kitabisa.com): Donation, zakat, wakaf, and SalingJaga platform.
+- [Kitabisa ORG](https://www.kitabisa.org/): Nonprofit and institutional arm.
+- [Kitabisa ORG partnership form](https://www.kitabisa.org/partnership-form): Where partner integrations start.
+- [CSR Kitabisa](https://csr.kitabisa.com/): Corporate social responsibility programs.
+- [NGO Kitabisa](https://ngo.kitabisa.com/): Digital fundraising for nonprofits.
+- [Android app](https://play.google.com/store/apps/details?id=com.kitabisa.android)
+- [iOS app](https://apps.apple.com/id/app/kitabisa/id1458307938)
+
+## Docs and support
+
+- [Pusat Bantuan (Help Center)](https://kitabisa.zendesk.com/hc/en-us): Zendesk help center, Indonesian and English.
+- [Syarat dan Ketentuan (Terms)](https://kitabisa.zendesk.com/hc/en-us/articles/360005344814-Syarat-dan-Ketentuan-Kitabisa)
+- [Kebijakan Privasi (Privacy Policy)](https://kitabisa.zendesk.com/hc/en-us/articles/360020697034-Kebijakan-Privasi)
+- [Blog Kitabisa](https://blog.kitabisa.com/)
+
+## Security
+
+- [Responsible Disclosure Policy](https://security.kitabisa.com): Public VDP with defined in-scope and out-of-scope assets, commitments, and a hall of fame.
+- [security.txt](https://kitabisa.com/.well-known/security.txt): RFC 9116, contact `infosec@kitabisa.com`, expires 2027-12-30.
+- [Disclosure policy source](https://github.com/kitabisa/responsible-disclosure): The policy itself is open source.
+- In-scope assets named by the policy: `kitabisa.com`, `accounts.kitabisa.com`, `core.kitabisa.com`, `donasi.kitabisa.com`, `galangdana.kitabisa.com`, `geni.kitabisa.com`, the Android and iOS apps, `waf.teler.app`, and `github.com/kitabisa/*`.
+
+## Open source
+
+- [Kitabisa on GitHub](https://github.com/kitabisa): 75 public repositories — Go services and libraries, GitHub Actions, and security tooling.
+- [teler-waf](https://pkg.go.dev/github.com/kitabisa/teler-waf): Go HTTP middleware giving teler IDS protection against OWASP Top 10 threats. Maintained by members of the Kitabisa Security team; upstream states it is not an officially supported Kitabisa product.
+- [sangu-dana](https://pkg.go.dev/github.com/kitabisa/sangu-dana): Go client for the DANA payment API.
+- [sangu-flip](https://pkg.go.dev/github.com/kitabisa/sangu-flip): Go client for the Flip disbursement API.
+- [moco](https://pkg.go.dev/github.com/kitabisa/moco): Bank mutation parser.
+- [@kitabisa/smockr](https://www.npmjs.com/package/@kitabisa/smockr): Mock server with Faker.js-backed responses.
+- [@kitabisa/jwe-wasm](https://www.npmjs.com/package/@kitabisa/jwe-wasm): JWE encryption/decryption in WebAssembly.
+- [sonarqube-action](https://github.com/kitabisa/sonarqube-action), [docker-slim-action](https://github.com/kitabisa/docker-slim-action), [gokart-action](https://github.com/kitabisa/gokart-action): Widely used first-party GitHub Actions.
+
+## API Evangelist artifacts in this repo
+
+- packages/kita-bisa-packages.yml — first-party open source package catalog.
+- well-known/kita-bisa-well-known.yml — /.well-known/ probe index.
+- well-known/kita-bisa-security.txt — RFC 9116 security.txt, verbatim.
+- security/kita-bisa-vulnerability-disclosure.yml — VDP contacts and policy.
+- security/kita-bisa-domain-security.yml — TLS/DNSSEC/CAA/SPF/DMARC posture.

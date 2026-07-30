@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of https://kitabisa.com/.well-known/*
+host: https://kitabisa.com
+documents:
+- path: /.well-known/security.txt
+  standard: RFC 9116
+  status: 200
+  file: kita-bisa-security.txt
+- path: /.well-known/openid-configuration
+  standard: OpenID Connect Discovery
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  standard: RFC 8414
+  status: 404
+- path: /.well-known/api-catalog
+  standard: RFC 9727
+  status: 404
+- path: /.well-known/ai-plugin.json
+  standard: OpenAI plugin manifest
+  status: 404
+notes: |
+  Only the RFC 9116 security.txt is published. Kitabisa operates no public API
+  program, so no OAuth/OIDC discovery or api-catalog surface exists. The
+  security.txt is signed-scope backed by the public responsible-disclosure
+  policy at https://security.kitabisa.com (source repo github.com/kitabisa/responsible-disclosure).
+  Additional hosts probed (all Cloudflare-proxied, HTTP 403 to non-browser
+  clients, so no well-known surface could be confirmed): api.kitabisa.com,
+  core.kitabisa.com, accounts.kitabisa.com. docs.kitabisa.com and
+  developer.kitabisa.com do not resolve in DNS.

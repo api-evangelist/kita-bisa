@@ -1,0 +1,135 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/kitabisa + https://pkg.go.dev + https://registry.npmjs.org
+notes: |
+  Kitabisa publishes no client SDK for a Kitabisa API — the company operates no
+  public API program. What it does publish is a substantial first-party open
+  source estate (75 public repos) of Go infrastructure, security and payment
+  libraries produced by its engineering teams. Those are catalogued here as
+  Packages. No `SDKs` pointer is emitted in apis.yml, because none of these are
+  client libraries for a Kitabisa API.
+packages:
+- language: go
+  registry: pkg.go.dev
+  name: github.com/kitabisa/teler-waf
+  version: v0.2.0
+  url: https://pkg.go.dev/github.com/kitabisa/teler-waf
+  install: go get github.com/kitabisa/teler-waf
+  source: https://github.com/kitabisa/teler-waf
+  description: Go HTTP middleware providing teler IDS protection against OWASP Top
+    10 threats, known vulnerabilities, botnets, crawlers and brute force.
+  official: false
+  official_note: Developed and maintained by members of the Kitabisa Security team;
+    upstream states it is not an officially supported Kitabisa product. Now also
+    developed under the teler-sh organization.
+  license: Apache-2.0 / Elastic License 2.0 (dual)
+- language: go
+  registry: pkg.go.dev
+  name: github.com/kitabisa/moco
+  version: v1.1.0
+  url: https://pkg.go.dev/github.com/kitabisa/moco
+  install: go get github.com/kitabisa/moco
+  source: https://github.com/kitabisa/moco
+  description: Library to parse bank mutation records and extract information from
+    them.
+  official: true
+- language: go
+  registry: pkg.go.dev
+  name: github.com/kitabisa/sangu-dana
+  version: v0.4.2
+  url: https://pkg.go.dev/github.com/kitabisa/sangu-dana
+  install: go get github.com/kitabisa/sangu-dana
+  source: https://github.com/kitabisa/sangu-dana
+  description: Go implementation of the DANA payment API.
+  official: true
+  official_note: First-party Kitabisa library, but a client for DANA's API — not for
+    a Kitabisa API.
+- language: go
+  registry: pkg.go.dev
+  name: github.com/kitabisa/sangu-flip
+  version: v0.2.0
+  url: https://pkg.go.dev/github.com/kitabisa/sangu-flip
+  install: go get github.com/kitabisa/sangu-flip
+  source: https://github.com/kitabisa/sangu-flip
+  description: Go implementation of the Flip (flip.id) disbursement API.
+  official: true
+  official_note: First-party Kitabisa library, but a client for Flip's API — not for
+    a Kitabisa API.
+- language: go
+  registry: pkg.go.dev
+  name: github.com/kitabisa/buroq
+  version: v1.1.0
+  url: https://pkg.go.dev/github.com/kitabisa/buroq
+  install: go get github.com/kitabisa/buroq
+  source: https://github.com/kitabisa/buroq
+  description: Go service bootstrap / cookie-cutter scaffold used for Kitabisa services.
+  official: true
+- language: go
+  registry: pkg.go.dev
+  name: github.com/kitabisa/tailpipe
+  version: v1.0.0
+  url: https://pkg.go.dev/github.com/kitabisa/tailpipe
+  install: go get github.com/kitabisa/tailpipe
+  source: https://github.com/kitabisa/tailpipe
+  description: '`tail -F` implementation for Go that handles log rotation.'
+  official: true
+- language: go
+  registry: pkg.go.dev
+  name: github.com/kitabisa/go-ci
+  version: v1.0.1
+  url: https://pkg.go.dev/github.com/kitabisa/go-ci
+  install: go get github.com/kitabisa/go-ci
+  source: https://github.com/kitabisa/go-ci
+  description: Go package that reports whether the current environment is a CI/CD
+    pipeline.
+  official: true
+- language: go
+  registry: pkg.go.dev
+  name: github.com/kitabisa/go_sdk_clevertap
+  version: v0.0.7
+  url: https://pkg.go.dev/github.com/kitabisa/go_sdk_clevertap
+  install: go get github.com/kitabisa/go_sdk_clevertap
+  source: https://github.com/kitabisa/go_sdk_clevertap
+  description: Go SDK for CleverTap.
+  official: true
+  official_note: First-party Kitabisa library, but a client for CleverTap's API.
+- language: go
+  registry: pkg.go.dev
+  name: github.com/kitabisa/otelchi
+  version: v1.1.0
+  url: https://pkg.go.dev/github.com/kitabisa/otelchi
+  install: go get github.com/kitabisa/otelchi
+  source: https://github.com/kitabisa/otelchi
+  description: OpenTelemetry instrumentation for the go-chi/chi router.
+  official: true
+- language: javascript
+  registry: npm
+  name: '@kitabisa/smockr'
+  version: 2.7.0
+  url: https://www.npmjs.com/package/@kitabisa/smockr
+  install: npm install @kitabisa/smockr
+  source: https://github.com/kitabisa/smockr
+  description: Mock server with flexible on-demand responses and optional random fake
+    data via Faker.js.
+  official: true
+  license: MIT
+- language: javascript
+  registry: npm
+  name: '@kitabisa/jwe-wasm'
+  version: 0.2.2
+  url: https://www.npmjs.com/package/@kitabisa/jwe-wasm
+  install: npm install @kitabisa/jwe-wasm
+  source: https://github.com/kitabisa/jwe-wasm
+  description: Library for JWE encryption / decryption using Biscuit, compiled from
+    Rust to WebAssembly.
+  official: true
+  license: MIT
+registries_probed:
+- npm
+- pkg.go.dev
+- PyPI
+- Maven Central
+- NuGet
+- RubyGems
+- Packagist
+- crates.io
