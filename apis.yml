@@ -37,6 +37,9 @@ accessModel:
   method: derived
 image: https://avatars.githubusercontent.com/u/40655294?v=4
 url: https://raw.githubusercontent.com/api-evangelist/kita-bisa/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Kitabisa publishes no public API or developer program — there is no developer portal, API reference, or OpenAPI definition on any Kitabisa surface, and partner integrations are arranged through busine"
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
