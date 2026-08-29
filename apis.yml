@@ -13,6 +13,17 @@ description: 'Kitabisa is Indonesia''s largest donation-based crowdfunding and m
   It does run a substantial first-party open source estate of 75 public Go, TypeScript,
   and GitHub Actions repositories, plus a public responsible-disclosure program backed
   by an RFC 9116 security.txt.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
