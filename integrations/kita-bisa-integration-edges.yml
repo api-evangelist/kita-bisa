@@ -1,0 +1,160 @@
+edges:
+- partner_name: Go module proxy
+  partner: null
+  partner_match: null
+  type: register
+  direction: provider-built
+  category: official SDK (Go)
+  evidence: https://pkg.go.dev/github.com/kitabisa/buroq
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: Go module proxy (public registry JSON)
+    spec_file: null
+    language: Go
+    packages:
+    - name: github.com/kitabisa/buroq
+      version: v1.1.1
+      released: '2019-12-11'
+      released_field: Time
+      lapsed: true
+      page: https://pkg.go.dev/github.com/kitabisa/buroq
+      repo_leg: github-org:kitabisa
+      publisher_leg: org:kitabisa
+      matched_by: github-org
+    - name: github.com/kitabisa/go-ci
+      version: v1.0.3
+      released: '2024-09-06'
+      released_field: Time
+      lapsed: true
+      page: https://pkg.go.dev/github.com/kitabisa/go-ci
+      repo_leg: github-org:kitabisa
+      publisher_leg: org:kitabisa
+      matched_by: github-org
+    - name: github.com/kitabisa/go_sdk_clevertap
+      version: v0.0.7
+      released: '2020-07-30'
+      released_field: Time
+      lapsed: true
+      page: https://pkg.go.dev/github.com/kitabisa/go_sdk_clevertap
+      repo_leg: github-org:kitabisa
+      publisher_leg: org:kitabisa
+      matched_by: github-org
+    - name: github.com/kitabisa/moco
+      version: v1.1.1
+      released: '2020-06-17'
+      released_field: Time
+      lapsed: true
+      page: https://pkg.go.dev/github.com/kitabisa/moco
+      repo_leg: github-org:kitabisa
+      publisher_leg: org:kitabisa
+      matched_by: github-org
+    - name: github.com/kitabisa/otelchi
+      version: v1.2.0
+      released: '2024-07-09'
+      released_field: Time
+      lapsed: true
+      page: https://pkg.go.dev/github.com/kitabisa/otelchi
+      repo_leg: github-org:kitabisa
+      publisher_leg: org:kitabisa
+      matched_by: github-org
+    - name: github.com/kitabisa/sangu-dana
+      version: v0.10.0
+      released: '2022-04-07'
+      released_field: Time
+      lapsed: true
+      page: https://pkg.go.dev/github.com/kitabisa/sangu-dana
+      repo_leg: github-org:kitabisa
+      publisher_leg: org:kitabisa
+      matched_by: github-org
+    - name: github.com/kitabisa/sangu-flip
+      version: v0.2.0
+      released: '2021-10-06'
+      released_field: Time
+      lapsed: true
+      page: https://pkg.go.dev/github.com/kitabisa/sangu-flip
+      repo_leg: github-org:kitabisa
+      publisher_leg: org:kitabisa
+      matched_by: github-org
+    - name: github.com/kitabisa/tailpipe
+      version: v1.0.0
+      released: '2023-01-28'
+      released_field: Time
+      lapsed: true
+      page: https://pkg.go.dev/github.com/kitabisa/tailpipe
+      repo_leg: github-org:kitabisa
+      publisher_leg: org:kitabisa
+      matched_by: github-org
+    - name: github.com/kitabisa/teler-waf
+      version: v1.7.0
+      released: '2025-02-21'
+      released_field: Time
+      lapsed: false
+      page: https://pkg.go.dev/github.com/kitabisa/teler-waf
+      repo_leg: github-org:kitabisa
+      publisher_leg: org:kitabisa
+      matched_by: github-org
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@kitabisa/jwe-wasm
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@kitabisa/jwe-wasm'
+      version: 0.2.2
+      released: '2024-09-05'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@kitabisa/jwe-wasm
+      repo_leg: github-org:kitabisa
+      publisher_leg: email:kitabisa.com
+      matched_by: domain
+    - name: '@kitabisa/smockr'
+      version: 2.7.0
+      released: '2024-04-30'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@kitabisa/smockr
+      repo_leg: github-org:kitabisa
+      publisher_leg: email:kitabisa.com
+      matched_by: domain
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+generated: '2026-10-18'
+method: searched
+source:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
+checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
