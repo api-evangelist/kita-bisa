@@ -64,44 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Kitabisa is Indonesia's largest donation-based crowdfunding and mutual-aid platform,
-founded in 2013 and headquartered in Jakarta. It serves individuals, nonprofits, and
-corporations raising funds for medical causes, disaster relief, education, and community
-development, and runs a dedicated Islamic-philanthropy surface for zakat, wakaf, and
-qurban — alongside NGO fundraising services, a CSR practice, a cooperative, and the
-SalingJaga mutual-protection product.
+Kitabisa is Indonesia's largest donation-based crowdfunding and mutual-aid platform, founded in 2013 and headquartered in Jakarta. It lets individuals, nonprofits, and corporations raise and give funds transparently for medical causes, disaster relief, education, and community development, and operates a dedicated Islamic-philanthropy surface for zakat, wakaf, and qurban. The group has grown beyond crowdfunding into digital fundraising services for NGOs (ngo.kitabisa.com), a CSR and social-marketing practice for corporate partners (csr.kitabisa.com), a cooperative, and the SalingJaga mutual-protection and insurance product. Kitabisa publishes no public API or developer program — there is no developer portal, API reference, or OpenAPI definition on any Kitabisa surface, and partner integrations are arranged through business channels. It does run a substantial first-party open source estate of 75 public Go, TypeScript, and GitHub Actions repositories, plus a public responsible-disclosure program backed by an RFC 9116 security.txt.
 
-Website: https://kitabisa.com — Backed by: 500-global
+**Areas:** Company · Crowdfunding · Donations · Non-Profit · Philanthropy · Zakat · Social Impact · Insurance · Indonesia · Open Source
 
-## No public API
+## Kita Bisa on APIs.io
 
-Kitabisa publishes **no public API and no developer program**. There is no developer
-portal, API reference, or OpenAPI/AsyncAPI/GraphQL definition on any Kitabisa surface.
-`docs.kitabisa.com` and `developer.kitabisa.com` do not resolve in DNS, and a code
-search across all 75 public repositories in the `kitabisa` GitHub organization returns
-zero OpenAPI or Swagger documents. Corporate and NGO integrations are arranged through
-business partnership channels.
+Everything profiled for Kita Bisa is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kita-bisa/](https://apis.io/providers/kita-bisa/)** — or go straight to one of the APIs or properties below.
 
-## What this repo captures
+### Published properties
 
-| Artifact | Path |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Kita Bisa Domain Security](https://apis.io/security/kita-bisa/kita-bisa-domain-security/)
+- [Kita Bisa Vulnerability Disclosure](https://apis.io/security/kita-bisa/kita-bisa-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://kitabisa.com)
+- [Support](https://kitabisa.zendesk.com/hc/en-us)
+- [Blog](https://blog.kitabisa.com/)
+- [Security](https://security.kitabisa.com)
+- [Terms of service](https://kitabisa.zendesk.com/hc/en-us/articles/360005344814-Syarat-dan-Ketentuan-Kitabisa)
+- [Privacy policy](https://kitabisa.zendesk.com/hc/en-us/articles/360020697034-Kebijakan-Privasi)
+- [GitHub](https://github.com/kitabisa)
+
+## API Evangelist rating
+
+**Kin Score 13.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| Open source packages (Go, npm) | `packages/kita-bisa-packages.yml` |
-| `/.well-known/` probe index | `well-known/kita-bisa-well-known.yml` |
-| RFC 9116 security.txt (verbatim) | `well-known/kita-bisa-security.txt` |
-| Vulnerability disclosure program | `security/kita-bisa-vulnerability-disclosure.yml` |
-| Domain security posture | `security/kita-bisa-domain-security.yml` |
-| llms.txt | `llms/kita-bisa-llms.txt` |
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
 
-## Notable findings
+**Agent readiness 0.0** — human-only
 
-- **Public responsible-disclosure program** at https://security.kitabisa.com, with the
-  policy itself open-sourced at `github.com/kitabisa/responsible-disclosure`. Contact
-  `infosec@kitabisa.com`; security.txt valid through 2027-12-30.
-- **Strong domain posture**: TLS 1.3, DNSSEC enabled, CAA records set, SPF present,
-  DMARC at `p=reject`. HSTS is not set.
-- **Substantial open source estate**: 75 public repos including `teler-waf` (Go WAF
-  middleware from the Kitabisa Security team), `sangu-dana` and `sangu-flip` (Go clients
-  for Indonesian payment rails), and widely used GitHub Actions such as
-  `sonarqube-action` and `docker-slim-action`.
-- No SDK pointer is emitted: none of the published libraries are clients for a Kitabisa API.
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.5** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/kita-bisa/](https://apis.io/providers/kita-bisa/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Kita Bisa: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kita-bisa/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
